@@ -1,4 +1,5 @@
 import React from 'react';
+import { Label, Input } from './Filter.Styled';
 
 class Filter extends React.Component {
   state = {
@@ -10,14 +11,14 @@ class Filter extends React.Component {
   };
   render() {
     return (
-      <label htmlFor="">
-        Find contacts by name
-        <input
+      <Label htmlFor="">
+        Find contacts by name:
+        <Input
           type="text"
           value={this.state.input}
           onChange={this.handleInputChange}
         />
-      </label>
+      </Label>
     );
   }
 }
